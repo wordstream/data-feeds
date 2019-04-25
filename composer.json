@@ -1,0 +1,17 @@
+{
+    "name": "wordstream/wordstream-data-feed",
+    "description": "Official Magento2 Plugin to integrate your products with WordStream Data Feeds",
+    "type": "magento2-module",
+    "license": "Apache-2.0",
+    "require": {
+        "php": ">=5.6.5",
+        "magento/framework": "^100.1.0|101.0.*|^102.0.0"
+    },
+    "version": "2.0.0",
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": {
+            "WordStream\\DataFeed\\": ""
+        }
+    }
+}
