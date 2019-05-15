@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<package>
+	<name>WordStream_Services</name>
+	<version>2.0.0</version>
+	<stability>stable</stability>
+	<license uri="https://www.wordstream.com/features/data-feeds">&amp;amp;#xA9;WordStream All rights reserved</license>
+	<channel>community</channel>
+	<extends/>
+	<summary>WordStream&amp;amp;#x2019;s powerful, turn-key datafeed management solution empowers Magento merchants with an affordable and effective way to optimize and automate their datafeed marketing.</summary>
+	<description>This extension automates product retrieval from Magento while providing enhanced attribute information. Install this extension to streamline your channel feed management with WordStream.</description>
+	<notes>2.0.0</notes>
+	<authors>
+		<author>
+			<name>WordStreamSupport</name>
+			<user>WordStreamSupport</user>
+			<email>feeds@wordstream.com</email>
+		</author>
+	</authors>
+	<date>2019-05-01</date>
+	<time>12:32:42</time>
+	<contents>
+		<target name="magelocal">
+			<dir name="WordStream">
+				<dir name="Services">
+					<dir name="Helper">
+						<file name="Data.php" hash="a1fe0ddc25f7fdf879b9d32124f180d6"/>
+					</dir>
+					<dir name="Model">
+						<dir name="Catalog">
+							<dir name="Product">
+								<file name="Api.php" hash="8b1df2e1080c3369ca009f7738f2e662"/>
+								<file name="BaseProductsData.php" hash="8645221f62ac2b5ac91844fffa7b7fa6"/>
+								<file name="Count.php" hash="5b7bbd0d657e2d6f7a63dc2d41d5d3d5"/>
+								<file name="ExtendedList.php" hash="f1a257cefe30e775b75fe6e38f373067"/>
+							</dir>
+						</dir>
+						<dir name="Version">
+							<file name="Api.php" hash="e78254453096a9511730a6b4eb8fbd69"/>
+						</dir>
+					</dir>
+					<dir name="etc">
+						<file name="api.xml" hash="89fccce9c02b17e682ef0cabf8adf073"/>
+						<file name="config.xml" hash="444c33f7338f9ba568c9497c53ed125d"/>
+					</dir>
+					<dir name="tests">
+						<dir name="WordStream">
+							<dir name="Services">
+								<dir name="Model">
+									<dir name="Catalog">
+										<dir name="Product">
+											<file name="AbstractBaseProductsData.php" hash="59bff79ad1dd0722a2b04043b44885f6"/>
+											<file name="ApiTest.php" hash="abf574ef0e600d10145d3b04e7ccf35c"/>
+											<file name="CountTest.php" hash="3f023fe42ae6188cda37bcecf1dd5f83"/>
+											<file name="DataForTesting.php" hash="7814531f468fd4df06d83459faf2aacc"/>
+											<file name="ExtendedListTest.php" hash="8f9bb66407f37865d9514803184e6fac"/>
+										</dir>
+									</dir>
+									<dir name="Version">
+										<file name="ApiTest.php" hash="20cc19c61e0c310f1b477d99004c2354"/>
+									</dir>
+								</dir>
+							</dir>
+						</dir>
+						<file name="bootstrap.php" hash="484dcbc75fe426da643fa218802e0dd8"/>
+						<file name="phpunit.xml" hash="9c136480d298ded98c9922c49483e44b"/>
+					</dir>
+				</dir>
+			</dir>
+		</target>
+		<target name="mageetc">
+			<dir name="modules">
+				<file name="WordStream_Services.xml" hash="ae91d492d62ed16b5ada1d2f523ad8cb"/>
+			</dir>
+		</target>
+	</contents>
+	<compatible/>
+	<dependencies>
+		<required>
+			<php>
+				<min>5.4.0</min>
+				<max>6.0.0</max>
+			</php>
+		</required>
+	</dependencies>
+</package>
